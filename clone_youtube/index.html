@@ -3,9 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'/>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="js/main.js"></script>
   <title>Clone_youtube</title>
 </head>
 <body>
-  
+  <!-- Header -->
+  <header>
+    <h1 class="hidden">유튜브</h1>
+    <div class="logo">
+      <a title="유튜브홈바로가기" href="#;">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </a>
+    </div>
+    <div class="buttons">
+      <button>
+          <i class="fas fa-search"></i>
+      </button>
+      <button>
+          <i class="fas fa-ellipsis-v"></i>
+      </button>
+    </div>
+  </header>
+  <!-- Video -->
+  <section class="player">
+    <h2 class="hidden">동영상</h2>
+    <video controls src="./video/video.mp4"></video>
+  </section>
+  <!-- Video Info -->
+  <section class="video_info">
+    <h3 class="hidden">동영상정보</h3>
+    <!-- Meta data -->
+    <div class="metadata">
+      <ul class="hashtags">
+        <li>#Side Project</li>
+        <li>#Clone Youtube</li>
+        <li>#Cheer Up</li>
+      </ul>
+      <div class="title_and_btn">
+        <span class="vid_title clamp">
+          Clone Coding: Youtube Mobile WebSite 클론코딩 유튜브 모바일 웹사이트 Sementic Mark-up, flexbox CSS, JavaScript | 연습하기 좋은 유튜브 클론코딩 시멘틱의 의미, 간결한 CSS를 생각해보면서 해봐요.
+        </span>
+        <button class="vid_more_btn">
+          <i class="fas fa-caret-down"></i>
+        </button>
+      </div>
+      <span class="views">1M views 12 days aogo</span>
+    </div>
+    <!-- Action buttons -->
+    <ul class="actions">
+      <li>
+        <button>
+          <i class="fas fa-thumbs-up active"></i><span>1K</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-thumbs-down"></i><span>0</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-share"></i><span>공유</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fas fa-plus"></i><span>저장</span>
+        </button>
+      </li>
+      <li>
+        <button>
+          <i class="fab fa-font-awesome-flag"></i><span>신고</span>
+        </button>
+      </li>
+    </ul>
+    <!-- Channel description -->
+    <div class="channel">
+      <div class="channel_metadata">
+        <img src="./image/avatar.png" alt="저자">
+        <div class="channel_info">
+          <span class="channel_name">Jaehyeokk</span>
+          <span class="channel_subscribers">구독자 100만명</span>
+        </div>
+      </div>
+      <button class="subscribe">구독</button>
+    </div>
+  </section>
+  <!-- Up next -->
+
+
 </body>
 </html>
