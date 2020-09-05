@@ -1,5 +1,5 @@
 * {margin:0; padding:0; box-sizing:border-box}
-body {font-family:Roboto, Noto SansKR}
+body {font-family:"Roboto"}
 ul {list-style:none}
 button,
 button:focus {border:none; background:transparent; cursor:pointer; outline:none}
@@ -62,7 +62,7 @@ header .buttons .fa-search {margin-right:var(--spacing)}
 .video_info .actions button i {margin:0 auto; margin-bottom:calc(var(--spacing)/2); font-size:var(--font-regular)}
 .video_info .actions button i.active {color:var(--blue-color)}
 
-/* Channel description */
+/* Channel Description */
 .video_info .channel {display:flex; justify-content:space-between; border-top:1px solid var(--grey_light-color); border-bottom:1px solid var(--grey_light-color)}
 .video_info .channel_metadata {display:flex; align-items:center; padding:calc(var(--spacing)/2)}
 .video_info .channel_metadata img {width:var(--avatar-size); height:var(--avatar-size); margin-right:var(--spacing); border-radius:50%}
@@ -70,3 +70,21 @@ header .buttons .fa-search {margin-right:var(--spacing)}
 .video_info .channel_name {font-size:var(--font-medium)}
 .video_info .channel_subscribers {font-size:var(--font-small); color:var(--grey-dark-color)}
 .subscribe {font-size:var(--font-medium); color:var(--red-color)}
+
+/* Up Next */
+.up_next {padding:0 var(--spacing)}
+.up_next .up_next_title {margin-bottom:calc(var(--spacing)/2); font-size:var(--font-medium); color:var(--grey-dark-color)}
+.up_next .item {display:flex; margin-top:var(--spacing)}
+.up_next .item .img {flex-basis:35%; margin-right:var(--spacing)}
+.up_next .item .img img {width:100%}
+.up_next .item .info {flex-basis:60%; display:flex; flex-direction:column}
+.up_next .item .info .title {display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 3; font-size:var(--font-small)}
+.up_next .item .info .channel,
+.up_next .item .info .views {font-size:var(--font-micro); color:var(--grey-dark-color)}
+.up_next .item .more_btn {flex-basis:5%; height:100%}
+
+@media screen and (min-width:768px){
+  .videoinfo_and_upnext {display:flex; flex-direction:row}
+  .video_info {flex-basis:50%}
+  .up_next {flex-basis:50%; margin-top:var(--spacing)}
+}
