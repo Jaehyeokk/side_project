@@ -1,7 +1,7 @@
 # Clone coding
 
 ## GitHub
-https://jaehyeokk.github.io/side_project/clone_github
+https://jaehyeokk.github.io/clone-coding/clone_github
 
 ## Youtube
-https://jaehyeokk.github.io/side_project/clone_youtube
+https://jaehyeokk.github.io/clone-coding/clone_youtube
